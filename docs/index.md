@@ -60,8 +60,6 @@ description: "SYSEN 5412 Final Project — Yi-Chia Wu (yw2839)"
   }
 </script>
 
-# Pico Alarm Clock
-
 ## Introduction
 
 An FSM-based smart alarm clock built on the **Raspberry Pi Pico** (MicroPython). Users set times and alarms via an IR remote; the alarm is stopped by waving a hand in front of an ultrasonic sensor or snoozed with a physical button. Scanning an RFID card shifts the displayed time by +13 hours. A WS2812 LED strip provides visual feedback for alarm status throughout.
