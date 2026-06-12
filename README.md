@@ -1,4 +1,4 @@
-# FSM Alarm Clock — SYSEN 5412 Final Project
+# Pico Alarm Clock — SYSEN 5412 Final Project
 
 An FSM-based smart alarm clock built on the Raspberry Pi Pico (MicroPython).
 
