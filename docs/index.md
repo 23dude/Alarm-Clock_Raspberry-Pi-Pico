@@ -1,5 +1,5 @@
 ---
-title: "FSM Alarm Clock"
+title: "Pico Alarm Clock"
 description: "SYSEN 5412 Final Project — Yi-Chia Wu (yw2839)"
 ---
 
@@ -27,7 +27,7 @@ description: "SYSEN 5412 Final Project — Yi-Chia Wu (yw2839)"
     const brand = document.createElement('a');
     brand.className = 'top-nav-brand';
     brand.href = '#';
-    brand.textContent = 'FSM Clock';
+    brand.textContent = 'Pico Clock';
     inner.appendChild(brand);
 
     const items = [];
@@ -60,7 +60,7 @@ description: "SYSEN 5412 Final Project — Yi-Chia Wu (yw2839)"
   }
 </script>
 
-# FSM Alarm Clock
+# Pico Alarm Clock
 
 ## Introduction
 
@@ -87,7 +87,7 @@ An FSM-based smart alarm clock built on the **Raspberry Pi Pico** (MicroPython).
   <div class="video-short-inner">
     <iframe
       src="https://www.youtube.com/embed/g99llM1LRGQ"
-      title="FSM Alarm Clock Demo"
+      title="Pico Alarm Clock Demo"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       allowfullscreen>
     </iframe>
