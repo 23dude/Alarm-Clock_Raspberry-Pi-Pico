@@ -1,0 +1,198 @@
+---
+---
+
+// ============================================================
+// Theme: FSM Alarm Clock — SYSEN 5412
+// Palette:
+//   Night   #0D1B2A   hero background
+//   Teal    #00B4D8   accent / clock display
+//   Alarm   #FF6B35   alarm orange
+//   Ink     #1A1A2E   body text
+//   Cream   #F8F9FA   body background
+// ============================================================
+
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Inter:wght@400;500;600&display=swap');
+
+// ---------------- TOP NAV ----------------
+html {
+  scroll-behavior: smooth !important;
+  scroll-padding-top: 72px !important;
+}
+
+.top-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: linear-gradient(180deg, #0D1B2A 0%, #162436 100%);
+  border-bottom: 3px solid #00B4D8;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.4);
+}
+
+.top-nav-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: thin;
+  scrollbar-color: #00B4D8 transparent;
+}
+
+.top-nav-inner::-webkit-scrollbar { height: 4px; }
+.top-nav-inner::-webkit-scrollbar-thumb { background-color: #00B4D8; border-radius: 2px; }
+
+.top-nav-brand {
+  font-family: 'Share Tech Mono', monospace !important;
+  font-size: 1.05rem;
+  color: #00B4D8 !important;
+  margin-right: 0.6rem;
+  padding: 0.2rem 0.8rem 0.2rem 0;
+  border-right: 2px solid rgba(0, 180, 216, 0.25);
+  border-bottom: none !important;
+  flex-shrink: 0;
+  text-decoration: none !important;
+}
+.top-nav-brand:hover { color: #FF6B35 !important; border-bottom: none !important; }
+
+.top-nav-item {
+  font-family: 'Inter', system-ui, sans-serif !important;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: rgba(248, 249, 250, 0.7) !important;
+  padding: 0.3rem 0.7rem;
+  border-radius: 5px;
+  text-decoration: none !important;
+  border: none !important;
+  border-bottom: 2px solid transparent !important;
+  flex-shrink: 0;
+  transition: color 0.15s, background 0.15s, border-color 0.15s;
+}
+.top-nav-item:hover {
+  color: #F8F9FA !important;
+  background: rgba(0, 180, 216, 0.15);
+  border-bottom-color: rgba(0, 180, 216, 0.5) !important;
+}
+.top-nav-item.active {
+  color: #fff !important;
+  background: rgba(0, 180, 216, 0.22);
+  border-bottom-color: #00B4D8 !important;
+}
+
+// ---------------- HERO ----------------
+.page-header {
+  background:
+    radial-gradient(ellipse at 50% 120%, rgba(0,180,216,0.15) 0%, transparent 55%),
+    linear-gradient(160deg, #0D1B2A 0%, #162436 100%) !important;
+  padding: 4.5rem 1rem 5rem !important;
+  border-bottom: 4px solid #00B4D8 !important;
+  box-shadow: 0 4px 30px rgba(0,180,216,0.2) !important;
+}
+
+.page-header .project-name,
+.page-header h1 {
+  font-family: 'Share Tech Mono', monospace !important;
+  font-size: 3rem !important;
+  letter-spacing: 2px !important;
+  color: #00B4D8 !important;
+  text-shadow: 0 0 20px rgba(0,180,216,0.5) !important;
+}
+
+.page-header .project-tagline,
+.page-header h2 {
+  font-family: 'Inter', system-ui, sans-serif !important;
+  color: rgba(248,249,250,0.78) !important;
+  font-weight: 400 !important;
+}
+
+.page-header .btn {
+  background-color: rgba(0,180,216,0.12) !important;
+  border-color: rgba(0,180,216,0.5) !important;
+  color: #F8F9FA !important;
+}
+.page-header .btn:hover {
+  background-color: #00B4D8 !important;
+  border-color: #00B4D8 !important;
+}
+
+// ---------------- BODY ----------------
+body { background-color: #F8F9FA !important; color: #1A1A2E !important; }
+.main-content { background-color: #F8F9FA !important; color: #1A1A2E !important; }
+.main-content p, .main-content li { color: #1A1A2E !important; }
+
+.main-content h2 {
+  color: #1A1A2E !important;
+  display: table !important;
+  border-bottom: 4px solid #00B4D8 !important;
+  padding-bottom: 0.3em !important;
+  margin-top: 2.2rem !important;
+}
+.main-content h3 { color: #1A1A2E !important; }
+.main-content h4 { color: #0096C7 !important; }
+
+a { color: #0096C7 !important; text-decoration: none !important; border-bottom: 1px solid rgba(0,150,199,0.3) !important; }
+a:hover { color: #FF6B35 !important; border-bottom-color: #FF6B35 !important; }
+
+.main-content strong { color: #C1440E !important; }
+
+.main-content code {
+  background-color: #FFF3EE !important;
+  color: #C1440E !important;
+  padding: 1px 6px !important;
+  border-radius: 4px !important;
+  font-size: 0.91em !important;
+}
+
+.main-content pre {
+  background-color: #0D1B2A !important;
+  border-radius: 8px !important;
+  padding: 1rem 1.2rem !important;
+  border: none !important;
+}
+.main-content pre code { background-color: transparent !important; color: #E0F7FA !important; padding: 0 !important; }
+
+.main-content table { border-collapse: collapse !important; border: 1px solid #DEE2E6 !important; border-radius: 8px !important; overflow: hidden !important; }
+.main-content table th { background-color: #0D1B2A !important; color: #F8F9FA !important; padding: 0.7rem 1rem !important; border: none !important; }
+.main-content table tr:nth-child(even) td { background-color: #F1F3F5 !important; }
+.main-content table tr:nth-child(odd) td  { background-color: #FFFFFF !important; }
+.main-content table td { border: none !important; border-top: 1px solid #DEE2E6 !important; padding: 0.6rem 1rem !important; }
+
+.main-content blockquote {
+  border-left: 4px solid #00B4D8 !important;
+  background-color: #E8F7FB !important;
+  padding: 0.8rem 1.2rem !important;
+  border-radius: 0 6px 6px 0 !important;
+}
+
+.main-content img { border-radius: 8px !important; box-shadow: 0 4px 16px rgba(0,0,0,0.1) !important; max-width: 100% !important; }
+.main-content iframe { border-radius: 8px !important; box-shadow: 0 6px 20px rgba(0,0,0,0.15) !important; }
+.main-content .mermaid { background: #fff !important; border: 1px solid #DEE2E6 !important; border-radius: 8px !important; padding: 1rem !important; margin: 1.2rem 0 !important; }
+.main-content hr { border: none !important; height: 2px !important; background: linear-gradient(90deg, transparent, #1A1A2E33, transparent) !important; margin: 2rem 0 !important; }
+
+// Video container — 9:16 vertical (YouTube Shorts)
+.video-short {
+  width: 100%;
+  max-width: 360px;
+  margin: 1.2rem auto;
+  display: block;
+}
+.video-short-inner {
+  position: relative;
+  padding-bottom: 177.78%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.18);
+}
+.video-short-inner iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 12px !important;
+}
+
+@import "{{ site.theme }}";

@@ -1,0 +1,17 @@
+# Large media files
+*.mp4
+*.mov
+*.avi
+
+# PDF (annotated / compiled)
+*.pdf
+
+# Python cache
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
+
+# Claude session
+.claude/
