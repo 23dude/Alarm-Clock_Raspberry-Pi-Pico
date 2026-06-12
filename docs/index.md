@@ -105,7 +105,7 @@ The system uses five ISRs that set atomic flags, and a main event loop that proc
 | `ir_callback` | NEC_8 IR decode complete | `ir_pending` + `last_ir_value` | IR remote input |
 | `button_isr` | GP14 falling edge (ALARM_ACTIVE only) | `button_pending` | Physical snooze button |
 | `timer_isr` | Timer1, 1000 ms | `timer_pending` | Time display update, alarm cadence, confirmation blink |
-| `gesture_check_isr` | Timer2, 1000 ms (independent — rate does not affect other logic) | `gesture_pending` | Trigger ultrasonic distance measurement |
+| `gesture_check_isr` | Timer2, 1000 ms | `gesture_pending` | Trigger ultrasonic distance measurement |
 | `rfid_poll_isr` | Timer3, 700 ms | `rfid_pending` | Trigger RFID card read |
 
 **Main loop event priority** (processed top-to-bottom each 5 ms cycle):
