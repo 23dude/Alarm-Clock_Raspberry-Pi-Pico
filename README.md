@@ -2,7 +2,7 @@
 
 An FSM-based smart alarm clock built on the Raspberry Pi Pico (MicroPython).
 
-- **Project website**: [coming soon via GitHub Pages]
+- **Project website**: [23dude.github.io/Alarm-Clock_Raspberry-Pi-Pico](https://23dude.github.io/Alarm-Clock_Raspberry-Pi-Pico/)
 - **Demo video**: [YouTube Short](https://youtube.com/shorts/g99llM1LRGQ)
 
 ## Hardware
